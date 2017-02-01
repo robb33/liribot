@@ -1,27 +1,29 @@
-// top
-
-
-//variables
+//variables test
 var debug = true;  //console control
 
-var twitter = "my-tweets";
-var spotify = "spotify-this-song";
-var omdb = "movie-this";
-var request = "do-what-it-says";
+
+var dataKeys = require("./key.js"); //ok
+var fs = require('fs'); //ok
+var twitter = require('twitter'); //ok
+var spotify = require('spotify'); //ok
+// var request = require('omdb'); //ughh
+var request = require('request'); //ok
 
 
 
 //console log
 if (debug) {
+  console.log(dataKeys);
+  console.log(fs);
   console.log(twitter);
   console.log(spotify);
-  console.log(omdb);
+  // console.log(omdb);
   console.log(request);
 }
 
 
 
-
+// 'https://api.spotify.com/v1/search?type=track&q=' + name of song + '&limit=10'
 
 
 //commands
